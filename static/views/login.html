@@ -1,0 +1,9 @@
+<form style="margin: 0 auto; width: 270px;" ng-submit="login()" name="formLogin">
+    <div class="form-group">
+        <input type="text" placeholder="{{'login.email' | i18n}}" jet-input-email="true" jet-required="true" ng-model="usario.email" class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="password" placeholder="{{'login.senha' | i18n}}" ng-model="usario.senha" jet-required="true" style="margin-top:5px;" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary btn-block" style="margin-top:5px;">Entrar</button>
+</form>

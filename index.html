@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]> <html class="no-js lt-ie10 lt-ie9" lang="pt-br" spellcheck="false"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" lang="pt-br" spellcheck="false"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="pt-br" spellcheck="false"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A Project to upload images">
+        <meta name="author" content="Leonardo Salles">
+        <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+        <title>Upload</title>
+
+        <!-- Bootstrap theme from bootswatch core CSS -->
+        <link href="vendor/bootswatch/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Bootstrap theme -->
+        <link href="static/css/bootstrap-theme.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+	<body>
+        <!-- Directiva para apresentar a barra de carregando inicial -->
+		<div jet-bootstrap="true"></div>
+        
+        <!-- Directiva que mostra o carregando sempre que uma request esta pendente -->
+		<div jet-loading="true"></div>
+        
+        <div id="wrapper">
+            <!-- Directiva que monta o menu -->
+            <div upload-menu="menu"></div>
+            
+            <div class="container view" id="page-content-wrapper">
+                <div class="content-header">
+                    <button type="button" id="menu-toggle" class="navbar-toggle btn btn-default" style="float: left;">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="header-title">{{page_title}}</span>
+                </div>
+
+                <div class="page-content inset">
+                    <!-- Aqui a div responsavel pela view, onde todas as paginas são carregadas -->
+                     <div id="main" ng-view class="container-fluid"></div>
+                </div>
+            </div>
+        </div>
+
+		<script type="text/javascript" data-main="static/js/main" src="vendor/requirejs/require.min.js" async></script>
+	</body>
+</html>
