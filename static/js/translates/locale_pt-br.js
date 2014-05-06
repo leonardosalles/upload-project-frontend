@@ -9,6 +9,22 @@ define({
     
     login: {
         email: 'Email',
-        senha: 'Senha'
-    }
+        senha: 'Senha',
+		entrar: 'Entrar'
+    },
+	
+	contato: {
+		titulo: 'Contato',
+	    nome: 'Nome',
+		email: 'Email',
+		mensagem: 'Mensagem',
+		enviar: 'Enviar'
+	},
+	
+	envieSuaFoto: {
+		seusDados: 'Seus dados',
+		nome: 'Nome',
+		email: 'Email',
+		enviar: 'Enviar'
+	}
 });

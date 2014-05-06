@@ -1,1 +1,46 @@
-<h2>Envie sua foto</h2>
+<form class="form" name="formUpload" ng-submit="upload()">
+	<div class="panel panel-default col-md-5">
+		<div class="panel-body">
+			<div class="upload">
+				<div class="file-preview">
+					<span class="glyphicon glyphicon-picture no-image"></span>
+				</div>
+
+				<label style="text-align: center;display: block;margin-top: 20px;" for="foto1">Selecione a imagem</label>
+				<input type="file" ng-model="usuario.foto1" name="file" id="foto1" class="file-loader">
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-2"><span class="glyphicon glyphicon-remove" style="display: block;text-align: center;font-size: 60px;margin-top: 100px;margin-left: 5px;margin-bottom: 100px"></span></div>
+
+	<div class="panel panel-default col-md-5">
+		<div class="panel-body">
+			<div class="upload">
+				<div class="file-preview">
+					<span class="glyphicon glyphicon-picture no-image"></span>
+				</div>
+
+				<label style="text-align: center;display: block;margin-top: 20px;" for="foto2">Selecione a imagem</label>
+				<input type="file" ng-model="usuario.foto2" name="file" id="foto2" class="file-loader">
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<h3 style="text-align: center;margin-bottom: 25px;">{{'envieSuaFoto.seusDados' | i18n}}</h3>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-6">
+			<input type="text" placeholder="{{'envieSuaFoto.nome' | i18n}}" jet-required="true" ng-model="usario.nome" class="form-control col-md-12">
+		</div>
+		<div class="col-md-6">
+			<input type="text" placeholder="{{'envieSuaFoto.email' | i18n}}" jet-input-email="true" jet-required="true" ng-model="usario.email" class="form-control col-md-12">
+		</div>
+	</div>
+	
+	<div class="row" style="margin-left: 0;margin-right: 0;margin-top: 18px;">
+		<button type="submit" class="btn btn-primary btn-lg btn-block">{{'envieSuaFoto.enviar' | i18n}}</button>
+	</div>
+</form>

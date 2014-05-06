@@ -813,3 +813,28 @@ body.ready .body-progress {
 .modal {
     color: #000000;
 }
+
+
+.file-preview {
+	margin: 0 auto;
+	width: 225px;
+	height: 173px;
+	display: block;
+	border: 1px solid #464545;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.file-loader {
+	margin: auto;
+	width: 129px;
+}
+
+.no-image {
+	text-align: center;
+	display: block;
+	font-size: 40px;
+	margin-top: 60px;
+}

@@ -56,7 +56,6 @@ define([
 	'directives/bootstrap',
 	'directives/validate',
 	
-	
 	'services/services',
 	'services/collections',
 	'services/resources',

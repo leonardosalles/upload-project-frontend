@@ -9,6 +9,10 @@ define(['controllers/controllers', 'text!../../../static/views/contato.html'],	f
 	controllers.controller('ContatoCtrl', function ($scope, $window) {
 		$window.document.title = 'Contato';
 		
-		$scope.listaTeste = ['ABC', 'DEF', 'GHI'];
+		$scope.enviaMensagem = function () {
+			if ($scope.formMensagem.isInvalid()) { return; }
+			
+			
+		}
 	});
 });
